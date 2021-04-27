@@ -4,7 +4,6 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from "react-router-dom";
 import { Metroid } from './components/Metroid';
-import "bootstrap/dist/css/bootstrap.min.css"
 
 ReactDOM.render(
   <React.StrictMode>
