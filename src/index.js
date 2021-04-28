@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from "react-router-dom";
+import { Metroid } from './components/Metroid';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Metroid />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,0 +1,157 @@
+{
+  "users": [
+    {
+      "email": "johnson.traye@yahoo.com",
+      "name": "Traye_Johnson",
+      "id": 1
+    },
+    {
+      "email": "hi@hello.com",
+      "name": "Jimmy_Johnson",
+      "id": 2
+    },
+    {
+      "email": "me@home.com",
+      "name": "Timmy_Thompson",
+      "id": 3
+    },
+    {
+      "email": "harry@hogwarts.edu",
+      "name": "Harry_Potter",
+      "id": 4
+    },
+    {
+      "email": "hermione@hogwarts.edu",
+      "name": "Hermione_Granger",
+      "id": 5
+    },
+    {
+      "email": "ron@hogwarts.edu",
+      "name": "Ron_Weasley",
+      "id": 6
+    }
+  ],
+  "games": [
+    {
+      "name": "Metroid",
+      "description": "Set on the planet Zebes, the story follows Samus Aran as she attempts to retrieve the parasitic Metroid organisms that were stolen by Space Pirates, who plan to replicate the Metroids by exposing them to beta rays and then use them as biological weapons to destroy Samus and all who oppose them.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/5/5d/Metroid_boxart.jpg",
+      "id": 1
+    },
+    {
+      "name": "Metroid II: Return of Samus",
+      "description": "The game follows bounty hunter Samus Aran on her mission to exterminate the Metroids from their home planet before the Space Pirates can obtain them.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/9/93/Metroid2_boxart.jpg",
+      "id": 2
+    },
+    {
+      "name": "Super Metroid",
+      "description": "Players control bounty hunter Samus Aran, who travels to planet Zebes to retrieve an infant Metroid creature stolen by the Space Pirate leader Ridley.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/e/e4/Smetroidbox.jpg",
+      "id": 3
+    },
+    {
+      "name": "Metroid Fusion",
+      "description": "Players control bounty hunter Samus Aran, who investigates a space station swarming with organisms infected with virions known as X parasites.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/4/45/Metroid_Fusion_box.jpg",
+      "id": 4
+    },
+    {
+      "name": "Metroid Prime",
+      "description": "The story follows Samus as she battles the Space Pirates and their biological experiments on the planet Tallon IV.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/b/ba/MetroidPrimebox.jpg",
+      "id": 5
+    },
+    {
+      "name": "Metroid: Zero Mission",
+      "description": "Samus Aran travels to planet Zebes after learning that Space Pirates are experimenting with Metroids in an attempt to duplicate them and use them for their own gain.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/7/7d/Metroid_--_Zero_Mission_%28box_art%29.jpg",
+      "id": 6
+    },
+    {
+      "name": "Metroid Prime 2: Echoes",
+      "description": "Samus Aran is sent to rescue Galactic Federation Marines from a ship near Aether, a planet inhabited by a race known as the Luminoth.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/6/6e/Echoesboxart_%28Large%29.jpg",
+      "id": 7
+    },
+    {
+      "name": "Metroid Prime Pinball",
+      "description": "This is a pinball video game themed after the Metroid series and uses the graphical style and various story elements from Metroid Prime.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/5/55/Metroid_Prime_Pinball.jpg",
+      "id": 8
+    },
+    {
+      "name": "Metroid Prime Hunters",
+      "description": "Samus Aran investigates a mysterious message that originated from the Alimbic Cluster and comes into contact with a legion of bounty hunters.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/Mph_cover_updated.jpg/330px-Mph_cover_updated.jpg",
+      "id": 9
+    },
+    {
+      "name": "Metroid Prime 3: Corruption",
+      "description": " It follows Samus Aran, 6 months after Prime 2, as she confronts the Space Pirates, who have launched an attack on the Galactic Federation naval base on Norion.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/7/75/Metroid_Prime_3_Packaging.jpg",
+      "id": 10
+    },
+    {
+      "name": "Metroid Prime: Trilogy",
+      "description": "This compilation features three games from the Metroid franchise: Metroid Prime, Metroid Prime 2: Echoes, and Metroid Prime 3: Corruption.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/1/16/Metroid_Prime_Trilogy.jpg",
+      "id": 11
+    },
+    {
+      "name": "Metroid: Other M",
+      "description": "Samus Aran investigates a derelict space station with a Galactic Federation platoon, including her former commanding officer, Adam Malkovich.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/6/6f/Metroid_Other_M_Cover.jpg",
+      "id": 12
+    },
+    {
+      "name": "Metroid Prime: Federation Force",
+      "description": "Players assume the role of Galactic Federation Marines attempting to thwart the continuing advances of the Space Pirates after Samus Aran eradicated the deadly Phazon mutagen.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/MetroidPrimeFederationForceBoxartNorthAmerica.png/330px-MetroidPrimeFederationForceBoxartNorthAmerica.png",
+      "id": 13
+    },
+    {
+      "name": "Metroid: Samus Returns",
+      "description": "Samus Aran is sent by the Galactic Federation to exterminate the parasitic Metroids on their home planet.",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/1/16/Metroid_Samus_Returns.jpg",
+      "id": 14
+    }
+  ],
+  "myGames": [],
+  "messages": [
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "hi",
+      "timestamp": "4 15, 2021",
+      "id": 1
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "loggedInUserId": 1,
+      "userId": 3
+    },
+    {
+      "id": 2,
+      "loggedInUserId": 2,
+      "userId": 5
+    },
+    {
+      "id": 3,
+      "loggedInUserId": 1,
+      "userId": 4
+    },
+    {
+      "id": 4,
+      "loggedInUserId": 1,
+      "userId": 6
+    },
+    {
+      "loggedInUserId": "1",
+      "userId": 2,
+      "id": 5
+    }
+  ]
+}
