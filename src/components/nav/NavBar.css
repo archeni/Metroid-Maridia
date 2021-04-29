@@ -1,0 +1,16 @@
+.nav-item {
+  list-style-type:none;
+  margin: 2em;
+  border: solid lightblue 2px;
+  background-color: darkorchid;
+  padding: .5em;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav-link {
+  color:lightblue
+}

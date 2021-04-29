@@ -2,6 +2,7 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
+import { MetroidList } from "./games/MetroidList";
 
 export const ApplicationViews = () => {
   return (
@@ -15,6 +16,9 @@ export const ApplicationViews = () => {
         <Register />
       </Route>
 
+      <Route exact path="/">
+        <MetroidList />
+      </Route>
 
         {/*looks for matching url (from task card) and digit, and sets as the 'taskId' */}
     </>
