@@ -23,3 +23,13 @@
 .gameDescription {
   color: lightblue;
 }
+
+.gameImg {
+  width: 18em;
+  height: 20em;
+}
+
+.gameRating {
+  display: flex;
+  justify-content: space-around;
+}

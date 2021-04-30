@@ -2,11 +2,12 @@ import React, {useState, useEffect} from 'react';
 import { getAllGames } from '../../modules/GamesManager';
 import { useHistory } from "react-router-dom";
 import { MetroidCard } from './MetroidCard';
+import { addMyGame } from '../../modules/MyGamesManager';
 
 export const MetroidList = () => {
   const [games, setGames] = useState([]);
   const [searchResults, setSearchResults] = useState([])
-  let history = useHistory()
+  let history = useHistory();
   
   const getGames = () => {
     return getAllGames().then(game => {
@@ -34,6 +35,16 @@ export const MetroidList = () => {
     }
   }
 
+  const handleAddGame = (id) => {
+    const newMyGame = {
+      userId: sessionStorage.getItem("metroid_user"),
+      gameId: parseInt(id),
+      privateRating: 0
+    }
+
+    addMyGame(newMyGame)
+  }
+
   useEffect(() => {
     getGames()
   }, []);
@@ -50,6 +61,7 @@ export const MetroidList = () => {
           <MetroidCard
             key={game.id}
             gameCard={game}
+            handleAddGame={handleAddGame}
         />)}
       </div>
     </section>

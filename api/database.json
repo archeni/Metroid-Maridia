@@ -117,7 +117,20 @@
       "id": 14
     }
   ],
-  "myGames": [],
+  "myGames": [
+    {
+      "userId": "1",
+      "gameId": 1,
+      "privateRating": 0,
+      "id": 1
+    },
+    {
+      "userId": "1",
+      "gameId": 1,
+      "privateRating": 0,
+      "id": 2
+    }
+  ],
   "messages": [
     {
       "sendingUserId": 1,
