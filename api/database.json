@@ -119,16 +119,40 @@
   ],
   "myGames": [
     {
-      "userId": "1",
+      "userId": 1,
       "gameId": 3,
       "privateRating": 0,
       "id": 1
     },
     {
       "userId": 1,
-      "gameId": 2,
+      "gameId": 3,
       "privateRating": 0,
       "id": 2
+    },
+    {
+      "userId": 1,
+      "gameId": 1,
+      "privateRating": 0,
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "gameId": 4,
+      "privateRating": 0,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "gameId": 5,
+      "privateRating": 0,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "gameId": 7,
+      "privateRating": 0,
+      "id": 6
     }
   ],
   "messages": [
@@ -140,11 +164,18 @@
       "id": 1
     },
     {
-      "sendingUserId": null,
+      "sendingUserId": 1,
       "receivingUserId": 0,
       "message": "The baby is watching you...",
       "timestamp": "4 30, 2021",
       "id": 2
+    },
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "i like pie",
+      "timestamp": "4 30, 2021",
+      "id": 3
     }
   ],
   "friends": [

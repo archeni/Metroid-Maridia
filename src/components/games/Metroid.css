@@ -3,11 +3,13 @@
   background-color: darkorchid;
   padding: .3em;
   margin: 1em;
+  flex-basis: 18%;
 }
 
 .gameList {
   display: flex;
-  flex-basis: 18%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .gameTitle {
