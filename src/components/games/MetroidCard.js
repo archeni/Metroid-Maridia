@@ -10,7 +10,7 @@ export const MetroidCard = ({gameCard, handleAddGame}) => {
       <section className='gameRating'>
         <div className='publicRating'>0/10</div>
         <div className='privateRating'></div>
-        <button className='addGameButton' type='button' onClick={handleAddGame(gameCard.id)}>Add Game</button>
+        <button className='addGameButton' type='button' onClick={() => handleAddGame(gameCard.id)}>Add Game</button>
       </section>
     </div>
   )

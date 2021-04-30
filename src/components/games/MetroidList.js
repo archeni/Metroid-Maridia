@@ -36,8 +36,9 @@ export const MetroidList = () => {
   }
 
   const handleAddGame = (id) => {
+    debugger
     const newMyGame = {
-      userId: sessionStorage.getItem("metroid_user"),
+      userId: parseInt(sessionStorage.getItem("metroid_user")),
       gameId: parseInt(id),
       privateRating: 0
     }

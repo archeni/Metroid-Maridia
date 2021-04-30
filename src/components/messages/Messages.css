@@ -1,6 +1,7 @@
 .message-title {
   color: lightblue;
   text-align: center;
+  text-shadow: paleturquoise 1px 1px;
 }
 
 .messageCard {
