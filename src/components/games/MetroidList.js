@@ -37,12 +37,13 @@ export const MetroidList = () => {
 
   const handleAddGame = (id) => {
     const newMyGame = {
-      userId: sessionStorage.getItem("metroid_user"),
+      userId: parseInt(sessionStorage.getItem("metroid_user")),
       gameId: parseInt(id),
       privateRating: 0
     }
 
     addMyGame(newMyGame)
+    alert("Added Game to Your Library!")
   }
 
   useEffect(() => {

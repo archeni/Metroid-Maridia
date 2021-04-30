@@ -2,3 +2,26 @@
   min-width: 15rem;
   min-height: 5rem;
 }
+
+.form--login {
+  color: lightblue;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: paleturquoise 1px 1px;
+}
+
+.link--register {
+  margin: 2em;
+  width: 10%;
+  background-color: lightblue;
+  border-radius: 25px;
+  padding: .5em;
+}
+
+fieldset {
+  background-color: darkorchid;
+  width: 25%;
+  margin: .5em;
+}

@@ -36,7 +36,7 @@ export const MessageForm = ({getMessages}) => {
   const handleClickSaveMessage = (event) => {
 		event.preventDefault() //Prevents the browser from submitting the form
     let newMessage = {
-      sendingUserId: parseInt(sessionStorage.getItem("nutshell_user")),
+      sendingUserId: parseInt(sessionStorage.getItem("metroid_user")),
       receivingUserId: 0,
       message: message.message,
       timestamp: `${new Date().getMonth()+1} ${new Date().getDate()}, ${new Date().getFullYear()}`
