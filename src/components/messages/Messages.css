@@ -1,0 +1,38 @@
+.message-title {
+  color: lightblue;
+  text-align: center;
+}
+
+.messageCard {
+  border: lightblue solid 2px;
+  border-radius: 25px;
+  padding: .5em;
+  margin: 2em;
+  background-color: darkorchid;
+  color: lightblue;
+}
+
+.messageList {
+  width: 40%;
+}
+
+.messageBox {
+  color: lightblue;
+}
+
+.save-message {
+  margin: 1em;
+}
+
+.form {
+  background-color: darkorchid;
+  border-radius: 25px;
+}
+
+.form-group {
+  margin-top: .5em;
+}
+
+#message {
+  width: 30%;
+}
