@@ -122,12 +122,6 @@
       "userId": 1,
       "gameId": 3,
       "privateRating": 0,
-      "id": 1
-    },
-    {
-      "userId": 1,
-      "gameId": 3,
-      "privateRating": 0,
       "id": 2
     },
     {
@@ -153,6 +147,12 @@
       "gameId": 7,
       "privateRating": 0,
       "id": 6
+    },
+    {
+      "userId": 1,
+      "gameId": 6,
+      "privateRating": 0,
+      "id": 7
     }
   ],
   "messages": [
@@ -176,6 +176,20 @@
       "message": "i like pie",
       "timestamp": "4 30, 2021",
       "id": 3
+    },
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "fhshns",
+      "timestamp": "4 30, 2021",
+      "id": 4
+    },
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "the baby",
+      "timestamp": "4 30, 2021",
+      "id": 5
     }
   ],
   "friends": [
