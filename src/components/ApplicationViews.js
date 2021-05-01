@@ -4,6 +4,7 @@ import { Login } from "./auth/Login";
 import { Register } from "./auth/Register";
 import { MetroidList } from "./games/MetroidList";
 import { MessageList } from "./messages/MessageList";
+import { LibraryList } from "./library/MyLibraryList";
 
 export const ApplicationViews = () => {
   return (
@@ -23,6 +24,10 @@ export const ApplicationViews = () => {
 
       <Route exact path='/messages'>
         <MessageList />
+      </Route>
+
+      <Route exact path='/myLibrary'>
+        <LibraryList />
       </Route>
 
         {/*looks for matching url (from task card) and digit, and sets as the 'taskId' */}

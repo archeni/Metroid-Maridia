@@ -1,0 +1,37 @@
+.gameCard {
+  border: solid lightblue 2px;
+  background-color: darkorchid;
+  padding: .3em;
+  margin: 1em;
+  flex-basis: 18%;
+}
+
+.gameList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gameTitle {
+  text-align: center;
+  color: lightblue;
+  background-color: darkorchid;
+}
+
+.gameForm {
+  text-align: center;
+}
+
+.gameDescription {
+  color: lightblue;
+}
+
+.gameImg {
+  width: 18em;
+  height: 20em;
+}
+
+.gameRating {
+  display: flex;
+  justify-content: space-around;
+}
