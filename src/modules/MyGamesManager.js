@@ -25,6 +25,11 @@ const remoteURL = "http://localhost:8088"
     }).then(data => data.json());
   }
 
+  export const getGameById = (id) => {
+    return fetch(`${remoteURL}/myGames/${id}`)
+        .then(res => res.json())
+  }
+
   export const deleteMyGame = (id) => {
     return fetch(`${remoteURL}/myGames/${id}`, {
       method: "DELETE"

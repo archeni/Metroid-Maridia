@@ -5,6 +5,7 @@ import { Register } from "./auth/Register";
 import { MetroidList } from "./games/MetroidList";
 import { MessageList } from "./messages/MessageList";
 import { LibraryList } from "./library/MyLibraryList";
+import { LibraryEditForm } from "./library/MyLibraryRating";
 
 export const ApplicationViews = () => {
   return (
@@ -30,6 +31,9 @@ export const ApplicationViews = () => {
         <LibraryList />
       </Route>
 
+      <Route exact path='/myLibrary/(\d+)/edit'>
+        <LibraryEditForm />
+      </Route>
         {/*looks for matching url (from task card) and digit, and sets as the 'taskId' */}
     </>
   )

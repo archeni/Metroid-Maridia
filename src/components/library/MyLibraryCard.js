@@ -11,7 +11,7 @@ export const MyLibraryCard = ({libraryGame, gameCard, handleDeleteGame, handleRa
         <div className='publicRating'>{libraryGame.privateRating}/10</div>
         <div className='privateRating'></div>
         <button className='deleteGameButton' type='button' onClick={() => handleDeleteGame(libraryGame.id)}>Delete Game</button>
-        <button className='rateGameButton' type='button' onClick={() => handleRateGame(gameCard.id)}>Rate Game</button>
+        <button className='rateGameButton' type='button' onClick={() => handleRateGame(libraryGame.id)}>Rate Game</button>
       </section>
     </div>
   )
