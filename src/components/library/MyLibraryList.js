@@ -32,6 +32,12 @@ export const LibraryList = () => {
   const handleDeleteGame = (id) => {
     deleteMyGame(id)
     .then(() => getMyGames());
+    
+  }
+  
+  const handleRateGame = (id) => {
+    history.push(`/myLibrary/${id}/edit`)
+    console.log(id)
   }
 
   useEffect(() => {
@@ -51,6 +57,7 @@ export const LibraryList = () => {
                 libraryGame={game}
                 gameCard={mainGame}
                 handleDeleteGame={handleDeleteGame}
+                handleRateGame={handleRateGame}
             />}}
 
           ))}
