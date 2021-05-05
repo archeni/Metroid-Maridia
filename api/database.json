@@ -153,6 +153,12 @@
       "userId": 1,
       "gameId": 6,
       "privateRating": 7
+    },
+    {
+      "id": 8,
+      "userId": 1,
+      "gameId": 1,
+      "privateRating": 10
     }
   ],
   "messages": [

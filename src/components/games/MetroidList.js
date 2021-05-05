@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import { getAllGames } from '../../modules/GamesManager';
-import { useHistory } from "react-router-dom";
 import { MetroidCard } from './MetroidCard';
 import { addMyGame, getAllMyGames } from '../../modules/MyGamesManager';
 
 export const MetroidList = () => {
   const [games, setGames] = useState([]);
   const [searchResults, setSearchResults] = useState([])
-  let library = [];
+  const [library, setLibrary] = useState([]);
+  const libraryGames = [];
 
   const getGames = () => {
     return getAllGames().then(game => {
@@ -15,10 +15,10 @@ export const MetroidList = () => {
       setSearchResults(game)
     })
   }
-
+  
   const getMyGames = () => {
     return getAllMyGames().then(myGame => {
-      library.push(myGame)
+      setLibrary(myGame)
     })
   }
 
@@ -57,6 +57,7 @@ export const MetroidList = () => {
     getMyGames()
   }, []);
   
+  libraryGames.push(library)
 
   return (
     <section className='games'>
@@ -66,19 +67,27 @@ export const MetroidList = () => {
       </form>
       <div className='gameList'>
         {searchResults.map(game => {
-          const ratingNumber = library.filter(personalGame => {
+          let dividingNumber = 0
+          let total = 0
+          libraryGames[0].filter(personalGame => {
             if(personalGame.gameId === game.id) {
-              return personalGame.privateRating
+              ++dividingNumber
+              console.log(game.id)
+              total += personalGame.privateRating
+              return personalGame
             }
-          },
-          console.log(ratingNumber),
+          })
+          let finalRating = 0
+          if(total > 0) {
+            finalRating = total/dividingNumber
+          }
           return <MetroidCard
-            key={game.id}
-            gameCard={game}
-            handleAddGame={handleAddGame}
-            ratingNumber={ratingNumber}
-        />
-        )})}
+              key={game.id}
+              gameCard={game}
+              handleAddGame={handleAddGame}
+              finalRating={finalRating}
+            />
+        })}
       </div>
     </section>
   )

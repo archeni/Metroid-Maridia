@@ -1,14 +1,10 @@
 import React from 'react';
 import './Metroid.css'
 
-export const MetroidCard = ({gameCard, handleAddGame, ratingNumber}) => {
-  const dividingNumber = ratingNumber.length
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
-  const total = ratingNumber.reduce(reducer);
-  const finalRating = total/dividingNumber
-
+export const MetroidCard = ({gameCard, handleAddGame, finalRating}) => {
+  console.log(finalRating)
   return (
-    <div className='gameCard'>
+    <div id={gameCard.id} className='gameCard'>
       <h4 className={gameCard.name}></h4>
       <img className='gameImg' src={gameCard.picture} />
       <p className='gameDescription'>{gameCard.description}</p>
