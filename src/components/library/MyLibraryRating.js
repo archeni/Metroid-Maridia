@@ -26,7 +26,7 @@ export const LibraryEditForm = () => {
           id: libraryId,
           userId: games.userId,
           gameId: games.gameId,
-          privateRating: games.privateRating,
+          privateRating: parseInt(games.privateRating),
         };
 
         console.log(libraryId)
