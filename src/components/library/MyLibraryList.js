@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import { getAllGames } from '../../modules/GamesManager';
 import { useHistory } from "react-router-dom";
 import { deleteMyGame, getAllMyGames } from '../../modules/MyGamesManager';
-import { getAllUsers } from '../../modules/FriendsManager';
 import { MyLibraryCard } from './MyLibraryCard';
 
 export const LibraryList = () => {
@@ -21,11 +20,11 @@ export const LibraryList = () => {
     if(game.userId === sessionId) {
         return true
       }
-    })
+  })
     
-    const getMyGames = () => {
-      return getAllMyGames().then(myGame => {
-        setLibrary(myGame)
+  const getMyGames = () => {
+    return getAllMyGames().then(myGame => {
+      setLibrary(myGame)
     })
   }
   
@@ -37,7 +36,6 @@ export const LibraryList = () => {
   
   const handleRateGame = (id) => {
     history.push(`/myLibrary/${id}/edit`)
-    console.log(id)
   }
 
   useEffect(() => {
