@@ -4,6 +4,7 @@
   padding: .3em;
   margin: 1em;
   flex-basis: 18%;
+  color: lightblue;
 }
 
 .gameList {
@@ -14,16 +15,15 @@
 
 .gameTitle {
   text-align: center;
-  color: lightblue;
   background-color: darkorchid;
+}
+
+.gameName {
+  text-align: center;
 }
 
 .gameForm {
   text-align: center;
-}
-
-.gameDescription {
-  color: lightblue;
 }
 
 .gameImg {
