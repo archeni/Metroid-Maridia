@@ -4,8 +4,8 @@ import './MyLibrary.css'
 export const MyLibraryCard = ({libraryGame, gameCard, handleDeleteGame, handleRateGame}) => {
   return (
     <div id={libraryGame.id} className='gameCard'>
-      <h4 className={gameCard.name}></h4>
-      <img className='gameImg' src={gameCard.picture} />
+      <h4 className='gameName'>{gameCard.name}</h4>
+      <img className='gameImg' src={gameCard.picture} alt='my metroid game'/>
       <p className='gameDescription'>{gameCard.description}</p>
       <section className='gameRating'>
         <div className='publicRating'>{libraryGame.privateRating}/10</div>

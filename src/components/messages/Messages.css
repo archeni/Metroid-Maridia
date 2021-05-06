@@ -20,6 +20,10 @@
 
 .messageBox {
   color: lightblue;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 35%;
 }
 
 .save-message {
@@ -29,6 +33,7 @@
 .form {
   background-color: darkorchid;
   border-radius: 25px;
+  width: 30rem;
 }
 
 .form-group {
@@ -36,5 +41,5 @@
 }
 
 #message {
-  width: 30%;
+  width: 80%;
 }

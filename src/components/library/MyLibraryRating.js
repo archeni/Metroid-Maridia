@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { editMyGame, getGameById } from "../../modules/MyGamesManager";
 import "./MyLibraryRating.css";
-import { useHistory, useParams, Link } from "react-router-dom"
+import { useHistory, Link } from "react-router-dom"
 
 export const LibraryEditForm = () => {
     const [games, setGame] = useState({ 
@@ -28,9 +28,6 @@ export const LibraryEditForm = () => {
           gameId: games.gameId,
           privateRating: parseInt(games.privateRating),
         };
-
-        console.log(libraryId)
-        console.log(editedGame)
 
         editMyGame(editedGame)
           .then(() => history.push("/myLibrary")

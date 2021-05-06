@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { getAllMessages } from '../../modules/MessagesManager';
-import { useHistory } from 'react-router-dom';
 import './Messages.css';
 import { MessageCard } from './MessageCard';
 import { MessageForm } from './MessageForm';
 
 export const MessageList = () => {
   const [messages, setMessages] = useState([]);
-  const history = useHistory();
 
   const getMessages = () => {
     return getAllMessages().then(APImessages => {

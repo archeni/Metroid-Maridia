@@ -5,7 +5,7 @@ export const MessageCard = ({cardMessage}) => {
     <div className='messageCard'>
       <p className='message'>{cardMessage.message}</p>
       <hr></hr>
-      <div className='timestamp'>{cardMessage.timestamp}</div>
+      <div className='timestamp'>Date: {cardMessage.timestamp}</div>
     </div>
   );
 }

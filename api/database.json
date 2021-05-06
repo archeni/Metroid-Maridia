@@ -29,6 +29,11 @@
       "email": "ron@hogwarts.edu",
       "name": "Ron_Weasley",
       "id": 6
+    },
+    {
+      "email": "bob.billy@gmail.com",
+      "name": "Bob_Billy",
+      "id": 7
     }
   ],
   "games": [
@@ -157,8 +162,26 @@
     {
       "id": 8,
       "userId": 1,
+      "gameId": 8,
+      "privateRating": 1
+    },
+    {
+      "id": 9,
+      "userId": 7,
+      "gameId": 7,
+      "privateRating": 1
+    },
+    {
+      "userId": 7,
       "gameId": 1,
-      "privateRating": 10
+      "privateRating": 0,
+      "id": 10
+    },
+    {
+      "userId": 7,
+      "gameId": 3,
+      "privateRating": 0,
+      "id": 11
     }
   ],
   "messages": [
@@ -166,36 +189,57 @@
       "sendingUserId": 1,
       "receivingUserId": 0,
       "message": "hi",
-      "timestamp": "4 15, 2021",
+      "timestamp": "4-15-2021",
       "id": 1
     },
     {
       "sendingUserId": 1,
       "receivingUserId": 0,
       "message": "The baby is watching you...",
-      "timestamp": "4 30, 2021",
+      "timestamp": "4-30-2021",
       "id": 2
     },
     {
       "sendingUserId": 1,
       "receivingUserId": 0,
       "message": "i like pie",
-      "timestamp": "4 30, 2021",
+      "timestamp": "4-30-2021",
       "id": 3
     },
     {
       "sendingUserId": 1,
       "receivingUserId": 0,
       "message": "fhshns",
-      "timestamp": "4 30, 2021",
+      "timestamp": "4-30-2021",
       "id": 4
     },
     {
       "sendingUserId": 1,
       "receivingUserId": 0,
       "message": "the baby",
-      "timestamp": "4 30, 2021",
+      "timestamp": "4-30-2021",
       "id": 5
+    },
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "wear a mask you dimwit",
+      "timestamp": "5-5-2021",
+      "id": 6
+    },
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "hello",
+      "timestamp": "5-6-2021",
+      "id": 7
+    },
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "I like metroid gshfshwh",
+      "timestamp": "5-6-2021",
+      "id": 8
     }
   ],
   "friends": [

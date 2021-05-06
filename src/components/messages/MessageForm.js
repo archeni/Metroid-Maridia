@@ -1,16 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { addMessage } from '../../modules/MessagesManager';
-import { useHistory } from 'react-router-dom';
 import './Messages.css';
-import { getAllUsers } from '../../modules/FriendsManager';
 
 export const MessageForm = ({getMessages}) => {
   const [message, setMessage] = useState({
     message: ''
   });
-  const [users, setUsers] = useState([]);
-  const history = useHistory();
-  
 
   const handleControlledInputChange = (event) => {
 		/* When changing a state object or array,
@@ -22,16 +17,6 @@ export const MessageForm = ({getMessages}) => {
 		// update state
 		setMessage(newMessage)
 	}
-
-  const getUsers = () => {
-    return getAllUsers().then(usersFromAPI => {
-        setUsers(usersFromAPI)
-    });
-  };
-
-  useEffect(() => {
-    getUsers();
-  }, []);
   
   const handleClickSaveMessage = (event) => {
 		event.preventDefault() //Prevents the browser from submitting the form
@@ -39,27 +24,12 @@ export const MessageForm = ({getMessages}) => {
       sendingUserId: parseInt(sessionStorage.getItem("metroid_user")),
       receivingUserId: 0,
       message: message.message,
-      timestamp: `${new Date().getMonth()+1} ${new Date().getDate()}, ${new Date().getFullYear()}`
+      timestamp: `${new Date().getMonth()+1}-${new Date().getDate()}-${new Date().getFullYear()}`
     }
 
-
-    if(newMessage.message.startsWith('@')){
-      let regularExpression = /(?<=\@)(.*?)(?=\s)/;
-
-      let parsedName = message.message.match(regularExpression);
-      
-      let privateUser = users.find(user => {
-        if(user.name.toLowerCase() === parsedName[0].toLowerCase()) {
-          return true
-        }
-      })
-
-      newMessage.receivingUserId = privateUser.id
-    }
-
-    console.log(newMessage)
 		addMessage(newMessage)
-			.then(getMessages)
+			.then(getMessages);
+    
 	}
 
 	return (

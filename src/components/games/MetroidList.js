@@ -8,6 +8,7 @@ export const MetroidList = () => {
   const [searchResults, setSearchResults] = useState([])
   const [library, setLibrary] = useState([]);
   const libraryGames = [];
+  const currentUser = parseInt(sessionStorage.getItem("metroid_user"));
 
   const getGames = () => {
     return getAllGames().then(game => {
@@ -27,14 +28,8 @@ export const MetroidList = () => {
     let gameInput = event.target.value
 
     if (gameInput.length > 0) {
-      console.log(gameInput)
 
-      let searchMatch = games.filter(game => {
-          if (game.name.toLowerCase().includes(gameInput.toLowerCase())) {
-              return true
-          }
-          
-      })
+      let searchMatch = games.filter(game => game.name.toLowerCase().includes(gameInput.toLowerCase()))
       setSearchResults(searchMatch)
     } else {
       setSearchResults(games)
@@ -43,14 +38,21 @@ export const MetroidList = () => {
 
   const handleAddGame = (id) => {
     const newMyGame = {
-      userId: parseInt(sessionStorage.getItem("metroid_user")),
+      userId: currentUser,
       gameId: parseInt(id),
       privateRating: 0
     }
 
-    addMyGame(newMyGame)
-    alert("Added Game to Your Library!")
+    if(library.find(personalGame => personalGame.userId === currentUser && personalGame.gameId === parseInt(id))) {
+      alert("You already have this game added! Pleas try adding another.")
+    } else {
+      addMyGame(newMyGame)
+      alert("Added Game to Your Library!")
+      getMyGames()
+    }
+    
   }
+  
 
   useEffect(() => {
     getGames()
@@ -72,14 +74,13 @@ export const MetroidList = () => {
           libraryGames[0].filter(personalGame => {
             if(personalGame.gameId === game.id) {
               ++dividingNumber
-              console.log(game.id)
               total += personalGame.privateRating
               return personalGame
             }
           })
           let finalRating = 0
           if(total > 0) {
-            finalRating = total/dividingNumber
+            finalRating = Math.round(total/dividingNumber)
           }
           return <MetroidCard
               key={game.id}
