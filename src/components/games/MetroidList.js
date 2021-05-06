@@ -44,7 +44,7 @@ export const MetroidList = () => {
     }
 
     if(library.find(personalGame => personalGame.userId === currentUser && personalGame.gameId === parseInt(id))) {
-      alert("You already have this game added! Pleas try adding another.")
+      alert("You already have this game added! Please try adding another.")
     } else {
       addMyGame(newMyGame)
       alert("Added Game to Your Library!")
