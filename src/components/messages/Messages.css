@@ -3,6 +3,9 @@
   text-align: center;
   text-shadow: paleturquoise 1px 1px;
   background-color: darkorchid;
+  position: sticky;
+  top: 4em;
+  border: lightblue 2px solid;
 }
 
 .messageCard {

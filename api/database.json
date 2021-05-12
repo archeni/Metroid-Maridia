@@ -178,10 +178,34 @@
       "id": 10
     },
     {
+      "id": 11,
       "userId": 7,
       "gameId": 3,
-      "privateRating": 0,
-      "id": 11
+      "privateRating": 6
+    },
+    {
+      "id": 12,
+      "userId": 1,
+      "gameId": 12,
+      "privateRating": 5
+    },
+    {
+      "id": 13,
+      "userId": 7,
+      "gameId": 2,
+      "privateRating": 8
+    },
+    {
+      "id": 14,
+      "userId": 1,
+      "gameId": 2,
+      "privateRating": 3
+    },
+    {
+      "id": 15,
+      "userId": 1,
+      "gameId": 9,
+      "privateRating": 10
     }
   ],
   "messages": [
@@ -240,6 +264,55 @@
       "message": "I like metroid gshfshwh",
       "timestamp": "5-6-2021",
       "id": 8
+    },
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "nono square",
+      "timestamp": "5-6-2021",
+      "id": 9
+    },
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "capstone",
+      "timestamp": "5-7-2021",
+      "id": 10
+    },
+    {
+      "sendingUserId": 1,
+      "receivingUserId": 0,
+      "message": "capstone",
+      "timestamp": "5-7-2021",
+      "id": 11
+    },
+    {
+      "sendingUserId": 7,
+      "receivingUserId": 0,
+      "message": "shodagarg",
+      "timestamp": "5-12-2021",
+      "id": 12
+    },
+    {
+      "sendingUserId": 7,
+      "receivingUserId": 0,
+      "message": "pie",
+      "timestamp": "5-12-2021",
+      "id": 13
+    },
+    {
+      "sendingUserId": 7,
+      "receivingUserId": 0,
+      "message": "enter something",
+      "timestamp": "5-12-2021",
+      "id": 14
+    },
+    {
+      "sendingUserId": 7,
+      "receivingUserId": 0,
+      "message": "set message",
+      "timestamp": "5-12-2021",
+      "id": 15
     }
   ],
   "friends": [

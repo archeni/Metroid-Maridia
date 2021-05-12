@@ -4,5 +4,6 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  -webkit-text-stroke: .15px black;
 }
 
