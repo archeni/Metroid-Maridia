@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, useHistory } from "react-router-dom"
 import './NavBar.css'
-import samusLogo from '../../images/cute-samus.png';
+import samusLogo from '../../images/surprised-samus.png';
 
 export const NavBar = () => {
   const history = useHistory()

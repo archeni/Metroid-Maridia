@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { getAllMessages } from '../../modules/MessagesManager';
 import './Messages.css';
 import { MessageCard } from './MessageCard';
@@ -13,9 +13,18 @@ export const MessageList = () => {
     })
   }
 
+  const messagesEndRef = useRef(null)
+  const scrollToBottom = () => {
+    messagesEndRef.current.scrollIntoView({behavior: "smooth"})
+  }
 
   useEffect(() => {
+    scrollToBottom()
+  }, [messages])
+  
+  useEffect(() => {
     getMessages();
+    scrollToBottom()
   }, []);
   
 	return (
@@ -27,6 +36,7 @@ export const MessageList = () => {
             <MessageCard key={singleMessage.id} cardMessage={singleMessage}/>
           )}
         </div>
+        <div ref={messagesEndRef} />
         <div>
           <MessageForm getMessages={getMessages}/>
         </div>

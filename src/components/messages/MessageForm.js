@@ -28,7 +28,12 @@ export const MessageForm = ({getMessages}) => {
     }
 
 		addMessage(newMessage)
-			.then(getMessages);
+			.then(() => {
+        getMessages()
+        setMessage({
+          message: ''
+        })
+      });
     
 	}
 
